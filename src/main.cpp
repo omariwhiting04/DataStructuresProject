@@ -1,14 +1,7 @@
-#include <SFML/Graphics.hpp>
+#include "GUIManager.h"
+
 int main() {
-    sf::RenderWindow window(sf::VideoMode(800, 600), "Data Structures Visualization");
-    while (window.isOpen()) {
-        sf::Event event;
-        while (window.pollEvent(event)) {
-            if (event.type == sf::Event::Closed)
-                window.close();
-        }
-        window.clear(sf::Color::Black);
-        window.display();
-    }
+    GUIManager gui;
+    gui.run();
     return 0;
 }
