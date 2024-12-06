@@ -1038,5 +1038,7 @@ CMakeFiles/DataStructuresProject.dir/src/GUIManager.cpp.o: \
   /Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/include/Stack.h \
   /Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/include/Queue.h \
   /Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/include/PriorityQueue.h \
+  /Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/include/RedBlackTree.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/iostream \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/istream
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/istream \
+  /Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/include/BTree.h

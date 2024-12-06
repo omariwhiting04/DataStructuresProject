@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/DataStructuresProject.dir/src/BST.cpp.o"
   "CMakeFiles/DataStructuresProject.dir/src/BST.cpp.o.d"
+  "CMakeFiles/DataStructuresProject.dir/src/BTree.cpp.o"
+  "CMakeFiles/DataStructuresProject.dir/src/BTree.cpp.o.d"
   "CMakeFiles/DataStructuresProject.dir/src/GUIManager.cpp.o"
   "CMakeFiles/DataStructuresProject.dir/src/GUIManager.cpp.o.d"
   "CMakeFiles/DataStructuresProject.dir/src/Heap.cpp.o"
@@ -9,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/DataStructuresProject.dir/src/PriorityQueue.cpp.o.d"
   "CMakeFiles/DataStructuresProject.dir/src/Queue.cpp.o"
   "CMakeFiles/DataStructuresProject.dir/src/Queue.cpp.o.d"
+  "CMakeFiles/DataStructuresProject.dir/src/RedBlackTree.cpp.o"
+  "CMakeFiles/DataStructuresProject.dir/src/RedBlackTree.cpp.o.d"
   "CMakeFiles/DataStructuresProject.dir/src/Stack.cpp.o"
   "CMakeFiles/DataStructuresProject.dir/src/Stack.cpp.o.d"
   "CMakeFiles/DataStructuresProject.dir/src/main.cpp.o"

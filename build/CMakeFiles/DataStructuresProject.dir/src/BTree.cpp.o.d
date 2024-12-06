@@ -1,5 +1,6 @@
-CMakeFiles/DataStructuresProject.dir/src/main.cpp.o: \
-  /Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/src/main.cpp \
+CMakeFiles/DataStructuresProject.dir/src/BTree.cpp.o: \
+  /Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/src/BTree.cpp \
+  /Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/include/BTree.h \
   /usr/local/include/SFML/Graphics.hpp \
   /usr/local/include/SFML/Window.hpp /usr/local/include/SFML/System.hpp \
   /usr/local/include/SFML/Config.hpp \
@@ -1032,13 +1033,5 @@ CMakeFiles/DataStructuresProject.dir/src/main.cpp.o: \
   /usr/local/include/SFML/Graphics/Sprite.hpp \
   /usr/local/include/SFML/Graphics/Text.hpp \
   /usr/local/include/SFML/Graphics/VertexBuffer.hpp \
-  /Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/include/GUIManager.h \
-  /Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/include/Heap.h \
-  /Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/include/BST.h \
-  /Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/include/Stack.h \
-  /Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/include/Queue.h \
-  /Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/include/PriorityQueue.h \
-  /Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/include/RedBlackTree.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/iostream \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/istream \
-  /Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/include/BTree.h
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/istream

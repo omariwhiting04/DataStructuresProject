@@ -2,15 +2,15 @@
 #include <iostream>
 
 GUIManager::GUIManager(sf::RenderWindow& window)
-    : window(window), selectedMenuItemIndex(0), heap(), bst(), stack(), queue(), priorityQueue() { // Initialize both heap and bst
+    : window(window), selectedMenuItemIndex(0), heap(), bst(), stack(), queue(), priorityQueue(), redBlackTree(), bTree(3)  {  
     if (!font.loadFromFile("assets/fonts/arial.ttf")) {
         std::cerr << "Error loading font. Make sure 'arial.ttf' is in the correct folder.\n";
     }
 
     // Define menu options
-    menuOptions = {"Heap", "BST", "Stack", "Queue", "Priority Queue", "Exit"};
-    float verticalOffset = 100;
+   menuOptions = {"Heap", "BST", "Stack", "Queue", "Priority Queue", "Red-Black Tree", "B-Tree", "Exit"};
     float spacing = 60;
+    float verticalOffset = 100;
 
     for (size_t i = 0; i < menuOptions.size(); ++i) {
         sf::Text menuItem;
@@ -80,9 +80,17 @@ void GUIManager::selectOption() {
     } else if (menuOptions[selectedMenuItemIndex] == "Queue") {
         std::cout << "Queue selected! Visualizing queue...\n";
         visualizeQueue();
-    } else if (menuOptions[selectedMenuItemIndex] == "Priority Queue") { // Correctly formatted
+    } else if (menuOptions[selectedMenuItemIndex] == "Priority Queue") { 
         std::cout << "Priority Queue selected! Visualizing priority queue...\n";
         visualizePriorityQueue();
+    } else if (menuOptions[selectedMenuItemIndex] == "Red-Black Tree") { 
+        std::cout << "Red-Black Tree selected! Visualizing Red-Black Tree...\n";
+        visualizeRedBlackTree();
+       
+    } else if (menuOptions[selectedMenuItemIndex] == "B-Tree") { 
+        std::cout << "BTree selected! Visualizing BTree...\n";
+        visualizeBTree();
+
     } else if (menuOptions[selectedMenuItemIndex] == "Exit") {
         window.close();
     }
@@ -175,6 +183,54 @@ void GUIManager::visualizePriorityQueue() {
     priorityQueue.visualize(window);
 
     // Wait for the user to close or go back
+    sf::Event event;
+    while (window.waitEvent(event)) {
+        if (event.type == sf::Event::Closed) {
+            window.close();
+            break;
+        }
+        if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape) {
+            std::cout << "Returning to menu.\n";
+            break;
+        }
+    }
+}
+
+void GUIManager::visualizeRedBlackTree() {
+    std::cout << "Red-Black Tree selected! Visualizing Red-Black Tree...\n";
+    redBlackTree.insert(30); // Example data
+    redBlackTree.insert(10);
+    redBlackTree.insert(50);
+    redBlackTree.visualize(window);
+
+    // Wait for the user to close or go back
+    sf::Event event;
+    while (window.waitEvent(event)) {
+        if (event.type == sf::Event::Closed) {
+            window.close();
+            break;
+        }
+        if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape) {
+            std::cout << "Returning to menu.\n";
+            break;
+        }
+    }
+}
+
+void GUIManager::visualizeBTree() {
+    std::cout << "B-Tree selected! Visualizing B-Tree...\n";
+
+    window.clear(sf::Color::Black);
+
+    bTree.insert(10);
+    bTree.insert(20);
+    bTree.insert(30);
+    bTree.insert(40);
+
+    bTree.visualize(window);
+
+    window.display();
+
     sf::Event event;
     while (window.waitEvent(event)) {
         if (event.type == sf::Event::Closed) {

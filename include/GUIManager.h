@@ -5,10 +5,12 @@
 #include <vector>
 #include <string>
 #include "Heap.h"
-#include "BST.h" // Include the BST header
+#include "BST.h" 
 #include "Stack.h"
 #include "Queue.h"
 #include "PriorityQueue.h"
+#include "RedBlackTree.h"
+#include "BTree.h"
 
 class GUIManager {
 public:
@@ -28,6 +30,8 @@ private:
     Stack stack; 
     Queue queue;
     PriorityQueue priorityQueue; 
+    RedBlackTree redBlackTree;
+    BTree bTree;
 
     void moveUp();
     void moveDown();
@@ -38,6 +42,8 @@ private:
     void visualizeStack();
     void visualizeQueue();
     void visualizePriorityQueue();
+    void visualizeRedBlackTree();
+    void visualizeBTree();
 
 };
 

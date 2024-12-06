@@ -153,6 +153,30 @@ src/BST.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructuresProject.dir/build.make CMakeFiles/DataStructuresProject.dir/src/BST.cpp.s
 .PHONY : src/BST.cpp.s
 
+src/BTree.o: src/BTree.cpp.o
+.PHONY : src/BTree.o
+
+# target to build an object file
+src/BTree.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructuresProject.dir/build.make CMakeFiles/DataStructuresProject.dir/src/BTree.cpp.o
+.PHONY : src/BTree.cpp.o
+
+src/BTree.i: src/BTree.cpp.i
+.PHONY : src/BTree.i
+
+# target to preprocess a source file
+src/BTree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructuresProject.dir/build.make CMakeFiles/DataStructuresProject.dir/src/BTree.cpp.i
+.PHONY : src/BTree.cpp.i
+
+src/BTree.s: src/BTree.cpp.s
+.PHONY : src/BTree.s
+
+# target to generate assembly for a file
+src/BTree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructuresProject.dir/build.make CMakeFiles/DataStructuresProject.dir/src/BTree.cpp.s
+.PHONY : src/BTree.cpp.s
+
 src/GUIManager.o: src/GUIManager.cpp.o
 .PHONY : src/GUIManager.o
 
@@ -249,6 +273,30 @@ src/Queue.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructuresProject.dir/build.make CMakeFiles/DataStructuresProject.dir/src/Queue.cpp.s
 .PHONY : src/Queue.cpp.s
 
+src/RedBlackTree.o: src/RedBlackTree.cpp.o
+.PHONY : src/RedBlackTree.o
+
+# target to build an object file
+src/RedBlackTree.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructuresProject.dir/build.make CMakeFiles/DataStructuresProject.dir/src/RedBlackTree.cpp.o
+.PHONY : src/RedBlackTree.cpp.o
+
+src/RedBlackTree.i: src/RedBlackTree.cpp.i
+.PHONY : src/RedBlackTree.i
+
+# target to preprocess a source file
+src/RedBlackTree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructuresProject.dir/build.make CMakeFiles/DataStructuresProject.dir/src/RedBlackTree.cpp.i
+.PHONY : src/RedBlackTree.cpp.i
+
+src/RedBlackTree.s: src/RedBlackTree.cpp.s
+.PHONY : src/RedBlackTree.s
+
+# target to generate assembly for a file
+src/RedBlackTree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructuresProject.dir/build.make CMakeFiles/DataStructuresProject.dir/src/RedBlackTree.cpp.s
+.PHONY : src/RedBlackTree.cpp.s
+
 src/Stack.o: src/Stack.cpp.o
 .PHONY : src/Stack.o
 
@@ -309,6 +357,9 @@ help:
 	@echo "... src/BST.o"
 	@echo "... src/BST.i"
 	@echo "... src/BST.s"
+	@echo "... src/BTree.o"
+	@echo "... src/BTree.i"
+	@echo "... src/BTree.s"
 	@echo "... src/GUIManager.o"
 	@echo "... src/GUIManager.i"
 	@echo "... src/GUIManager.s"
@@ -321,6 +372,9 @@ help:
 	@echo "... src/Queue.o"
 	@echo "... src/Queue.i"
 	@echo "... src/Queue.s"
+	@echo "... src/RedBlackTree.o"
+	@echo "... src/RedBlackTree.i"
+	@echo "... src/RedBlackTree.s"
 	@echo "... src/Stack.o"
 	@echo "... src/Stack.i"
 	@echo "... src/Stack.s"
