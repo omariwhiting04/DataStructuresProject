@@ -111,10 +111,52 @@ CMakeFiles/DataStructuresProject.dir/src/Heap.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DataStructuresProject.dir/src/Heap.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/src/Heap.cpp -o CMakeFiles/DataStructuresProject.dir/src/Heap.cpp.s
 
+CMakeFiles/DataStructuresProject.dir/src/PriorityQueue.cpp.o: CMakeFiles/DataStructuresProject.dir/flags.make
+CMakeFiles/DataStructuresProject.dir/src/PriorityQueue.cpp.o: /Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/src/PriorityQueue.cpp
+CMakeFiles/DataStructuresProject.dir/src/PriorityQueue.cpp.o: CMakeFiles/DataStructuresProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DataStructuresProject.dir/src/PriorityQueue.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DataStructuresProject.dir/src/PriorityQueue.cpp.o -MF CMakeFiles/DataStructuresProject.dir/src/PriorityQueue.cpp.o.d -o CMakeFiles/DataStructuresProject.dir/src/PriorityQueue.cpp.o -c /Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/src/PriorityQueue.cpp
+
+CMakeFiles/DataStructuresProject.dir/src/PriorityQueue.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DataStructuresProject.dir/src/PriorityQueue.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/src/PriorityQueue.cpp > CMakeFiles/DataStructuresProject.dir/src/PriorityQueue.cpp.i
+
+CMakeFiles/DataStructuresProject.dir/src/PriorityQueue.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DataStructuresProject.dir/src/PriorityQueue.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/src/PriorityQueue.cpp -o CMakeFiles/DataStructuresProject.dir/src/PriorityQueue.cpp.s
+
+CMakeFiles/DataStructuresProject.dir/src/Queue.cpp.o: CMakeFiles/DataStructuresProject.dir/flags.make
+CMakeFiles/DataStructuresProject.dir/src/Queue.cpp.o: /Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/src/Queue.cpp
+CMakeFiles/DataStructuresProject.dir/src/Queue.cpp.o: CMakeFiles/DataStructuresProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DataStructuresProject.dir/src/Queue.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DataStructuresProject.dir/src/Queue.cpp.o -MF CMakeFiles/DataStructuresProject.dir/src/Queue.cpp.o.d -o CMakeFiles/DataStructuresProject.dir/src/Queue.cpp.o -c /Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/src/Queue.cpp
+
+CMakeFiles/DataStructuresProject.dir/src/Queue.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DataStructuresProject.dir/src/Queue.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/src/Queue.cpp > CMakeFiles/DataStructuresProject.dir/src/Queue.cpp.i
+
+CMakeFiles/DataStructuresProject.dir/src/Queue.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DataStructuresProject.dir/src/Queue.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/src/Queue.cpp -o CMakeFiles/DataStructuresProject.dir/src/Queue.cpp.s
+
+CMakeFiles/DataStructuresProject.dir/src/Stack.cpp.o: CMakeFiles/DataStructuresProject.dir/flags.make
+CMakeFiles/DataStructuresProject.dir/src/Stack.cpp.o: /Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/src/Stack.cpp
+CMakeFiles/DataStructuresProject.dir/src/Stack.cpp.o: CMakeFiles/DataStructuresProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/DataStructuresProject.dir/src/Stack.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DataStructuresProject.dir/src/Stack.cpp.o -MF CMakeFiles/DataStructuresProject.dir/src/Stack.cpp.o.d -o CMakeFiles/DataStructuresProject.dir/src/Stack.cpp.o -c /Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/src/Stack.cpp
+
+CMakeFiles/DataStructuresProject.dir/src/Stack.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DataStructuresProject.dir/src/Stack.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/src/Stack.cpp > CMakeFiles/DataStructuresProject.dir/src/Stack.cpp.i
+
+CMakeFiles/DataStructuresProject.dir/src/Stack.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DataStructuresProject.dir/src/Stack.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/src/Stack.cpp -o CMakeFiles/DataStructuresProject.dir/src/Stack.cpp.s
+
 CMakeFiles/DataStructuresProject.dir/src/main.cpp.o: CMakeFiles/DataStructuresProject.dir/flags.make
 CMakeFiles/DataStructuresProject.dir/src/main.cpp.o: /Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/src/main.cpp
 CMakeFiles/DataStructuresProject.dir/src/main.cpp.o: CMakeFiles/DataStructuresProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DataStructuresProject.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/DataStructuresProject.dir/src/main.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DataStructuresProject.dir/src/main.cpp.o -MF CMakeFiles/DataStructuresProject.dir/src/main.cpp.o.d -o CMakeFiles/DataStructuresProject.dir/src/main.cpp.o -c /Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/src/main.cpp
 
 CMakeFiles/DataStructuresProject.dir/src/main.cpp.i: cmake_force
@@ -130,6 +172,9 @@ DataStructuresProject_OBJECTS = \
 "CMakeFiles/DataStructuresProject.dir/src/BST.cpp.o" \
 "CMakeFiles/DataStructuresProject.dir/src/GUIManager.cpp.o" \
 "CMakeFiles/DataStructuresProject.dir/src/Heap.cpp.o" \
+"CMakeFiles/DataStructuresProject.dir/src/PriorityQueue.cpp.o" \
+"CMakeFiles/DataStructuresProject.dir/src/Queue.cpp.o" \
+"CMakeFiles/DataStructuresProject.dir/src/Stack.cpp.o" \
 "CMakeFiles/DataStructuresProject.dir/src/main.cpp.o"
 
 # External object files for target DataStructuresProject
@@ -138,13 +183,16 @@ DataStructuresProject_EXTERNAL_OBJECTS =
 DataStructuresProject: CMakeFiles/DataStructuresProject.dir/src/BST.cpp.o
 DataStructuresProject: CMakeFiles/DataStructuresProject.dir/src/GUIManager.cpp.o
 DataStructuresProject: CMakeFiles/DataStructuresProject.dir/src/Heap.cpp.o
+DataStructuresProject: CMakeFiles/DataStructuresProject.dir/src/PriorityQueue.cpp.o
+DataStructuresProject: CMakeFiles/DataStructuresProject.dir/src/Queue.cpp.o
+DataStructuresProject: CMakeFiles/DataStructuresProject.dir/src/Stack.cpp.o
 DataStructuresProject: CMakeFiles/DataStructuresProject.dir/src/main.cpp.o
 DataStructuresProject: CMakeFiles/DataStructuresProject.dir/build.make
 DataStructuresProject: /usr/local/lib/libsfml-graphics.2.6.2.dylib
 DataStructuresProject: /usr/local/lib/libsfml-window.2.6.2.dylib
 DataStructuresProject: /usr/local/lib/libsfml-system.2.6.2.dylib
 DataStructuresProject: CMakeFiles/DataStructuresProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable DataStructuresProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable DataStructuresProject"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/DataStructuresProject.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -201,6 +201,78 @@ src/Heap.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructuresProject.dir/build.make CMakeFiles/DataStructuresProject.dir/src/Heap.cpp.s
 .PHONY : src/Heap.cpp.s
 
+src/PriorityQueue.o: src/PriorityQueue.cpp.o
+.PHONY : src/PriorityQueue.o
+
+# target to build an object file
+src/PriorityQueue.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructuresProject.dir/build.make CMakeFiles/DataStructuresProject.dir/src/PriorityQueue.cpp.o
+.PHONY : src/PriorityQueue.cpp.o
+
+src/PriorityQueue.i: src/PriorityQueue.cpp.i
+.PHONY : src/PriorityQueue.i
+
+# target to preprocess a source file
+src/PriorityQueue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructuresProject.dir/build.make CMakeFiles/DataStructuresProject.dir/src/PriorityQueue.cpp.i
+.PHONY : src/PriorityQueue.cpp.i
+
+src/PriorityQueue.s: src/PriorityQueue.cpp.s
+.PHONY : src/PriorityQueue.s
+
+# target to generate assembly for a file
+src/PriorityQueue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructuresProject.dir/build.make CMakeFiles/DataStructuresProject.dir/src/PriorityQueue.cpp.s
+.PHONY : src/PriorityQueue.cpp.s
+
+src/Queue.o: src/Queue.cpp.o
+.PHONY : src/Queue.o
+
+# target to build an object file
+src/Queue.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructuresProject.dir/build.make CMakeFiles/DataStructuresProject.dir/src/Queue.cpp.o
+.PHONY : src/Queue.cpp.o
+
+src/Queue.i: src/Queue.cpp.i
+.PHONY : src/Queue.i
+
+# target to preprocess a source file
+src/Queue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructuresProject.dir/build.make CMakeFiles/DataStructuresProject.dir/src/Queue.cpp.i
+.PHONY : src/Queue.cpp.i
+
+src/Queue.s: src/Queue.cpp.s
+.PHONY : src/Queue.s
+
+# target to generate assembly for a file
+src/Queue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructuresProject.dir/build.make CMakeFiles/DataStructuresProject.dir/src/Queue.cpp.s
+.PHONY : src/Queue.cpp.s
+
+src/Stack.o: src/Stack.cpp.o
+.PHONY : src/Stack.o
+
+# target to build an object file
+src/Stack.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructuresProject.dir/build.make CMakeFiles/DataStructuresProject.dir/src/Stack.cpp.o
+.PHONY : src/Stack.cpp.o
+
+src/Stack.i: src/Stack.cpp.i
+.PHONY : src/Stack.i
+
+# target to preprocess a source file
+src/Stack.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructuresProject.dir/build.make CMakeFiles/DataStructuresProject.dir/src/Stack.cpp.i
+.PHONY : src/Stack.cpp.i
+
+src/Stack.s: src/Stack.cpp.s
+.PHONY : src/Stack.s
+
+# target to generate assembly for a file
+src/Stack.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructuresProject.dir/build.make CMakeFiles/DataStructuresProject.dir/src/Stack.cpp.s
+.PHONY : src/Stack.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -243,6 +315,15 @@ help:
 	@echo "... src/Heap.o"
 	@echo "... src/Heap.i"
 	@echo "... src/Heap.s"
+	@echo "... src/PriorityQueue.o"
+	@echo "... src/PriorityQueue.i"
+	@echo "... src/PriorityQueue.s"
+	@echo "... src/Queue.o"
+	@echo "... src/Queue.i"
+	@echo "... src/Queue.s"
+	@echo "... src/Stack.o"
+	@echo "... src/Stack.i"
+	@echo "... src/Stack.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

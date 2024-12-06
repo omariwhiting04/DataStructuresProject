@@ -6,6 +6,9 @@
 #include <string>
 #include "Heap.h"
 #include "BST.h" // Include the BST header
+#include "Stack.h"
+#include "Queue.h"
+#include "PriorityQueue.h"
 
 class GUIManager {
 public:
@@ -21,14 +24,21 @@ private:
     int selectedMenuItemIndex;
 
     Heap heap;
-    BST bst; // Add BST object
+    BST bst; 
+    Stack stack; 
+    Queue queue;
+    PriorityQueue priorityQueue; 
 
     void moveUp();
     void moveDown();
     void selectOption();
 
     void visualizeHeap();
-    void visualizeBST(); // Add function declaration for visualizing BST
+    void visualizeBST(); 
+    void visualizeStack();
+    void visualizeQueue();
+    void visualizePriorityQueue();
+
 };
 
 #endif

@@ -2,13 +2,13 @@
 #include <iostream>
 
 GUIManager::GUIManager(sf::RenderWindow& window)
-    : window(window), selectedMenuItemIndex(0), heap(), bst() { // Initialize both heap and bst
+    : window(window), selectedMenuItemIndex(0), heap(), bst(), stack(), queue(), priorityQueue() { // Initialize both heap and bst
     if (!font.loadFromFile("assets/fonts/arial.ttf")) {
         std::cerr << "Error loading font. Make sure 'arial.ttf' is in the correct folder.\n";
     }
 
     // Define menu options
-    menuOptions = {"Heap", "BST", "Exit"};
+    menuOptions = {"Heap", "BST", "Stack", "Queue", "Priority Queue", "Exit"};
     float verticalOffset = 100;
     float spacing = 60;
 
@@ -74,6 +74,15 @@ void GUIManager::selectOption() {
     } else if (menuOptions[selectedMenuItemIndex] == "BST") {
         std::cout << "BST selected! Visualizing BST...\n";
         visualizeBST();
+    } else if (menuOptions[selectedMenuItemIndex] == "Stack") {
+        std::cout << "Stack selected! Visualizing stack...\n";
+        visualizeStack();
+    } else if (menuOptions[selectedMenuItemIndex] == "Queue") {
+        std::cout << "Queue selected! Visualizing queue...\n";
+        visualizeQueue();
+    } else if (menuOptions[selectedMenuItemIndex] == "Priority Queue") { // Correctly formatted
+        std::cout << "Priority Queue selected! Visualizing priority queue...\n";
+        visualizePriorityQueue();
     } else if (menuOptions[selectedMenuItemIndex] == "Exit") {
         window.close();
     }
@@ -104,6 +113,66 @@ void GUIManager::visualizeBST() {
     bst.insert(30);
     bst.insert(70);
     bst.visualize(window);
+
+    // Wait for the user to close or go back
+    sf::Event event;
+    while (window.waitEvent(event)) {
+        if (event.type == sf::Event::Closed) {
+            window.close();
+            break;
+        }
+        if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape) {
+            std::cout << "Returning to menu.\n";
+            break;
+        }
+    }
+}
+
+void GUIManager::visualizeStack() {
+    stack.push(10); // Example data
+    stack.push(20);
+    stack.push(30);
+    stack.visualize(window);
+
+    // Wait for the user to close or go back
+    sf::Event event;
+    while (window.waitEvent(event)) {
+        if (event.type == sf::Event::Closed) {
+            window.close();
+            break;
+        }
+        if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape) {
+            std::cout << "Returning to menu.\n";
+            break;
+        }
+    }
+}
+
+void GUIManager::visualizeQueue() {
+    queue.enqueue(10); // Example data
+    queue.enqueue(20);
+    queue.enqueue(30);
+    queue.visualize(window);
+
+    // Wait for the user to close or go back
+    sf::Event event;
+    while (window.waitEvent(event)) {
+        if (event.type == sf::Event::Closed) {
+            window.close();
+            break;
+        }
+        if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape) {
+            std::cout << "Returning to menu.\n";
+            break;
+        }
+    }
+}
+
+void GUIManager::visualizePriorityQueue() {
+    priorityQueue.enqueue(15, 3); // Example data
+    priorityQueue.enqueue(10, 1);
+    priorityQueue.enqueue(20, 2);
+    priorityQueue.visualize(window);
 
     // Wait for the user to close or go back
     sf::Event event;

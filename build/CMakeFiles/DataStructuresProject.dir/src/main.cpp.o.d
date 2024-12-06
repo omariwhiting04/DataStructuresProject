@@ -1034,4 +1034,7 @@ CMakeFiles/DataStructuresProject.dir/src/main.cpp.o: \
   /usr/local/include/SFML/Graphics/VertexBuffer.hpp \
   /Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/include/GUIManager.h \
   /Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/include/Heap.h \
-  /Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/include/BST.h
+  /Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/include/BST.h \
+  /Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/include/Stack.h \
+  /Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/include/Queue.h \
+  /Users/omariwhiting/Desktop/Final_Project_SFML/DataStructuresProject/include/PriorityQueue.h
