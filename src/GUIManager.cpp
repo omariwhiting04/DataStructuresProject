@@ -1,66 +1,120 @@
 #include "GUIManager.h"
 #include <iostream>
 
-GUIManager::GUIManager() 
-    : window(sf::VideoMode(800, 600), "Data Structures Visualization") {
+GUIManager::GUIManager(sf::RenderWindow& window)
+    : window(window), selectedMenuItemIndex(0), heap(), bst() { // Initialize both heap and bst
     if (!font.loadFromFile("assets/fonts/arial.ttf")) {
-        std::cerr << "Error loading font\n";
+        std::cerr << "Error loading font. Make sure 'arial.ttf' is in the correct folder.\n";
     }
-    setupGUI();
-}
 
-void GUIManager::setupGUI() {
-    // Title
-    title.setFont(font);
-    title.setString("Data Structures Visualization");
-    title.setCharacterSize(30);
-    title.setFillColor(sf::Color::White);
-    title.setPosition(200, 50);
+    // Define menu options
+    menuOptions = {"Heap", "BST", "Exit"};
+    float verticalOffset = 100;
+    float spacing = 60;
 
-    // Menu items
-    std::vector<std::string> items = {
-        "1. Binary Search Tree",
-        "2. AVL Tree",
-        "3. Red-Black Tree",
-        "4. Heap",
-        "5. Priority Queue"
-    };
-    float yPos = 150;
-    for (const auto& item : items) {
-        sf::Text text;
-        text.setFont(font);
-        text.setString(item);
-        text.setCharacterSize(20);
-        text.setFillColor(sf::Color::Cyan);
-        text.setPosition(250, yPos);
-        menuItems.push_back(text);
-        yPos += 50;
+    for (size_t i = 0; i < menuOptions.size(); ++i) {
+        sf::Text menuItem;
+        menuItem.setFont(font);
+        menuItem.setString(menuOptions[i]);
+        menuItem.setCharacterSize(30);
+        menuItem.setFillColor(sf::Color::White);
+        menuItem.setPosition(300, verticalOffset + i * spacing);
+        menuItems.push_back(menuItem);
     }
-}
 
-void GUIManager::run() {
-    while (window.isOpen()) {
-        handleEvents();
-        render();
-    }
+    // Highlight the first menu item
+    menuItems[selectedMenuItemIndex].setFillColor(sf::Color::Red);
 }
 
 void GUIManager::handleEvents() {
     sf::Event event;
     while (window.pollEvent(event)) {
-        if (event.type == sf::Event::Closed)
+        if (event.type == sf::Event::Closed) {
             window.close();
+        } else if (event.type == sf::Event::KeyPressed) {
+            if (event.key.code == sf::Keyboard::Up) {
+                moveUp();
+            } else if (event.key.code == sf::Keyboard::Down) {
+                moveDown();
+            } else if (event.key.code == sf::Keyboard::Enter) {
+                selectOption();
+            }
+        }
     }
 }
 
 void GUIManager::render() {
-    window.clear(sf::Color::Black);
-
-    // Draw GUI elements
-    window.draw(title);
-    for (const auto& item : menuItems) {
-        window.draw(item);
+    window.clear();
+    for (auto& menuItem : menuItems) {
+        window.draw(menuItem);
     }
-
     window.display();
+}
+
+void GUIManager::moveUp() {
+    if (selectedMenuItemIndex - 1 >= 0) {
+        menuItems[selectedMenuItemIndex].setFillColor(sf::Color::White);
+        selectedMenuItemIndex--;
+        menuItems[selectedMenuItemIndex].setFillColor(sf::Color::Red);
+    }
+}
+
+void GUIManager::moveDown() {
+    if (selectedMenuItemIndex + 1 < menuItems.size()) {
+        menuItems[selectedMenuItemIndex].setFillColor(sf::Color::White);
+        selectedMenuItemIndex++;
+        menuItems[selectedMenuItemIndex].setFillColor(sf::Color::Red);
+    }
+}
+
+void GUIManager::selectOption() {
+    if (menuOptions[selectedMenuItemIndex] == "Heap") {
+        std::cout << "Heap selected! Visualizing heap...\n";
+        visualizeHeap();
+    } else if (menuOptions[selectedMenuItemIndex] == "BST") {
+        std::cout << "BST selected! Visualizing BST...\n";
+        visualizeBST();
+    } else if (menuOptions[selectedMenuItemIndex] == "Exit") {
+        window.close();
+    }
+}
+
+void GUIManager::visualizeHeap() {
+    heap.insert(10);
+    heap.insert(20);
+    heap.insert(30);
+    heap.visualize(window);
+
+    // Wait for the user to close or go back
+    sf::Event event;
+    while (window.waitEvent(event)) {
+        if (event.type == sf::Event::Closed) {
+            window.close();
+            break;
+        }
+        if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape) {
+            std::cout << "Returning to menu.\n";
+            break;
+        }
+    }
+}
+
+void GUIManager::visualizeBST() {
+    bst.insert(50);
+    bst.insert(30);
+    bst.insert(70);
+    bst.visualize(window);
+
+    // Wait for the user to close or go back
+    sf::Event event;
+    while (window.waitEvent(event)) {
+        if (event.type == sf::Event::Closed) {
+            window.close();
+            break;
+        }
+        if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape) {
+            std::cout << "Returning to menu.\n";
+            break;
+        }
+    }
 }

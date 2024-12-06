@@ -4,24 +4,31 @@
 #include <SFML/Graphics.hpp>
 #include <vector>
 #include <string>
+#include "Heap.h"
+#include "BST.h" // Include the BST header
 
 class GUIManager {
 public:
-    GUIManager();
-    void run();
-
-private:
-    sf::RenderWindow window;
-
-    // GUI elements
-    sf::Font font;
-    sf::Text title;
-    std::vector<sf::Text> menuItems;
-
-    // Helper methods
-    void setupGUI();
+    GUIManager(sf::RenderWindow& window);
     void handleEvents();
     void render();
+
+private:
+    sf::RenderWindow& window;
+    sf::Font font;
+    std::vector<std::string> menuOptions;
+    std::vector<sf::Text> menuItems;
+    int selectedMenuItemIndex;
+
+    Heap heap;
+    BST bst; // Add BST object
+
+    void moveUp();
+    void moveDown();
+    void selectOption();
+
+    void visualizeHeap();
+    void visualizeBST(); // Add function declaration for visualizing BST
 };
 
-#endif // GUIMANAGER_H
+#endif
